@@ -15,7 +15,16 @@ class DosesController < ApplicationController
     @dose.cocktail = @cocktail
     if @dose.save
       redirect_to cocktail_path(@cocktail)
+    else
+    	flash[:error] = "You've done wrong!"
+    	render 'cocktails/show'
     end
+  end
+
+  def destroy
+    @dose = Dose.find(params[:id])
+    @dose.destroy
+    redirect_to cocktail_path(@dose.cocktail)
   end
 
   private
