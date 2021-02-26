@@ -1,0 +1,18 @@
+Searching 19945 files for "cocktail-card"
+
+/Users/marionpetitprez/code/marionpp/rails-mister-cocktail/app/assets/stylesheets/components/_cocktail_card.scss:
+    1: .cocktail-card {
+    2    background-position: center;
+    3    background-size: cover;
+
+/Users/marionpetitprez/code/marionpp/rails-mister-cocktail/app/views/cocktails/index.html.erb:
+   33      <% @cocktails.each do |cocktail| %>
+   34        <div class="col-4">
+   35:         <div class="cocktail-card"
+   36               style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1550426735-c33c7ce414ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=920&q=80')">
+   37            <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+
+/Users/marionpetitprez/code/marionpp/rails-mister-cocktail/log/development.log:
+    <binary>
+
+4 matches across 3 files
